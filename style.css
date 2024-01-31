@@ -1,0 +1,110 @@
+﻿*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', sans-serif;
+    background-color: #B2B2B2;
+   
+    
+}
+.meme-generator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  
+    
+    
+    
+}
+
+.generate-meme-btn{
+
+    margin-bottom: 20px;
+    padding: 20px 80px;
+    border-radius: 5px;
+    outline: none;
+   border: none;
+   border-left:4px solid red;
+   border-right: 4px solid red;
+   background-color:  #B2B2B2;
+   color: white;
+   font-size: 20px;
+   transition: 3s;
+   
+
+}
+
+.generate-meme-btn:hover{
+    cursor: pointer;
+    background-color:white ;
+    color: red;
+    transform: translate(-2.1rem, -2ex);
+    transition: 3s;
+}
+h2{
+  font-size: 16px;
+  animation-duration: 5s;
+  animation-name: slide;
+padding-top: 40px;
+padding-bottom: 10px;
+
+}
+
+.meme-generator img{
+    height: 430px;
+    object-fit: cover;
+    border: solid 2px red;
+}
+
+.meme-author{
+    margin: 8px;
+    padding: 20px 0;
+
+    font-size: medium;
+    font-weight: bolder;
+ 
+}
+
+
+
+/* .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }  */
+
+    
+
+@keyframes slide{
+    from{
+
+        margin-left: 100%;
+        width: 300%;
+
+    }
+    to{
+
+        margin-left: 0%;
+        width: 100%;
+
+    }
+}
